@@ -35,3 +35,4 @@ if __name__ == "__main__":
     print(Fore.YELLOW, "gcd(1032, 180) = ", euclides(1032, 180))  # gcd = 12
     print(Fore.YELLOW, "gcd(275, 225) = ", euclides(275, 225))  # gcd = 25
     sys.exit()
+e
