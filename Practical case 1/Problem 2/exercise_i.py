@@ -15,8 +15,9 @@ def euclides(dividend, divisor):
     """
     reste = None
     rest_ant = divisor
+    steps = 0
     if dividend % divisor == 0:
-        return divisor
+        return divisor, steps
 
     while reste not in (0, 1):
         reste = dividend % divisor
@@ -25,10 +26,13 @@ def euclides(dividend, divisor):
         dividend = aux
         if reste != 0:
             rest_ant = reste
-    return rest_ant
+        steps += 1
+    return rest_ant, steps
 
 
 if __name__ == "__main__":
+    print(Fore.CYAN, "In the solution tuple, the first number is the gcd and the second "
+                     "number is the number of steps")
     print(Fore.YELLOW, "gcd(12, 3) = ", euclides(12, 3))  # gcd = 3
     print(Fore.YELLOW, "gcd(3, 2) = ", euclides(3, 2))  # gcd = 1
     print(Fore.YELLOW, "gcd(15, 8) = ", euclides(15, 8))  # gcd = 1
