@@ -24,10 +24,12 @@ def division(dividend, divisor):
         residue = dividend - divisor
         dividend = residue
         quotient += 1
-    return quotient
+    return quotient, residue
 
 
 if __name__ == "__main__":
+    print(Fore.RED, "In the tuple the first number is the quotient and the"
+                    "second one is the reminder")
     print(Fore.YELLOW, "20 // 4 = ", division(20, 4))  # quotient = 5
     print(Fore.YELLOW, "20 // 5 = ", division(20, 5))  # quotient = 4
     print(Fore.YELLOW, "103 // 111 = ", division(103, 111))  # quotient = 0
