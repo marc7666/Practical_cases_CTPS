@@ -19,7 +19,7 @@ def euclides(dividend, divisor):
     if dividend % divisor == 0:
         return divisor, steps
 
-    while reste not in (0, 1):
+    while reste != 0:
         reste = dividend % divisor
         aux = divisor
         divisor = reste
