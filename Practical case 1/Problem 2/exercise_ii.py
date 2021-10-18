@@ -11,8 +11,8 @@ if __name__ == "__main__":
           exercise_i.euclides(487669403177, 28736540321))
     print(Fore.YELLOW, "gcd(20365011074, 12586269023) = ",
           exercise_i.euclides(20365011074, 12586269023))
-    print(Fore.YELLOW, "gcd((2**35) - 1, (2**34) - 1) = ",
-          exercise_i.euclides(34359738367, 17179869183))
+    print(Fore.YELLOW, "gcd((2**15) - 1, (2**14) - 1) = ",
+          exercise_i.euclides(32767, 16383))
     sys.exit()
-    # (2**35) - 1 = 34359738367
-    # (2**34) - 1 = 17179869183
+    # (2**15) - 1 = 32767
+    # (2**34) - 1 = 16383
