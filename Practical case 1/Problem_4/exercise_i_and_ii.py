@@ -1,6 +1,7 @@
 """
 Authorship: Marc Cervera Rosell
 """
+# pylint: disable=E0401
 import sys
 from colorama import Fore
 import XGCD
