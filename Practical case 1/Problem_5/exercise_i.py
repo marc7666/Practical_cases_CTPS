@@ -34,12 +34,10 @@ def print_polynomial(factors):
             continue
 
         polynomial_str += str(converted[i])
-        polynomial_str += "x^"
+        polynomial_str += "*x**"
         power = len(converted) - 1 - i
         polynomial_str += str(power)
-        polynomial_str += " "
         polynomial_str += "+"
-        polynomial_str += " "
     polynomial_str += str(converted[len(converted) - 1])
     return polynomial_str
 
