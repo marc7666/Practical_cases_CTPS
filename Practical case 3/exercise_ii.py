@@ -1,5 +1,8 @@
-import exercise_i
+"""
+Authorship: Marc Cervera Rosell
+"""
 from colorama import Fore
+import exercise_i
 
 if __name__ == "__main__":
     print(Fore.RED, "NOTE: To know the result, look for the green sentence."
