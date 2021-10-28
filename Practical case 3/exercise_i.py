@@ -36,12 +36,15 @@ def search_match(list1, list2):
     """
     This method searches for a match between the two lists
     """
-    for i in range(0, len(list1) - 1):
-        for j in range(0, len(list1[i]) - 1):
+    for i in range(0, len(list1)):
+        for j in range(len(list1)):
+            if list1[i][0] == list2[j][0]:
+                return list1[i], list2[j]
+    '''for i in range(0, len(list1) - 1):
+        for j in range(0, len(list1) - 1):
             for k in 0, 1:
                 if list1[i][0] == list2[j][0]:
-                    return list1[i], list2[j]
-    return Exception
+                    return list1[i], list2[j]'''
 
 
 # pylint: disable=C0103
